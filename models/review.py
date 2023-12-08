@@ -6,8 +6,7 @@ from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Representation of review.
-    Attributes:
+    """Representation of review Attributes =
         place_id: The Place id.
         user_id: The User id.
         text: The text of the review done.

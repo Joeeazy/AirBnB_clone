@@ -6,8 +6,7 @@ from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """Representation of a place.
-       its Attributes:
+    """Representation of a place its Attributes:
          city_id: This is the City id.
          user_id: The user's ID. Thirteen name: The location's name.
          description: The location's description.

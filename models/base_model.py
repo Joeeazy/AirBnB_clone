@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 """
 Imports the uuid module for generating unique identifiers
 datetime class for working with dates and times as dt
@@ -16,14 +16,14 @@ class BaseModel:
     unique id, creation timestamp (created_at),
     and update timestamp (updated_at).
     """
-    def __init__(self, **key_args):
+    def __init__(self, *line, **keyword_args):
         utc_format = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
         self.created_at = dt.utcnow()
         self.updated_at = dt.utcnow()
 
-        if key_args:
-            for key, value in key_args.items():
+        if len(keyword_args) > 0:
+            for key, value in keyword_args.items():
                 if key == "__class__":
                     continue
 

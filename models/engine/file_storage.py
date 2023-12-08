@@ -15,7 +15,7 @@ from models.city import City
 
 class FileStorage:
     """
-    FileStorage class manages the storage, 
+    FileStorage class manages the storage,
     serialization, and deserialization of data
     """
     __file_path = "file.json"
@@ -24,7 +24,7 @@ class FileStorage:
 
     def new(self, obj):
         """
-        Adds an object to the __objects dictionary with a key formatted as 
+        Adds an object to the __objects dictionary with a key formatted as
         <object class name>.id.
         """
         obj_class_name = obj.__class__.__name__
@@ -35,14 +35,14 @@ class FileStorage:
 
     def all(self):
         """
-        Returns the __objects dictionary, 
+        Returns the __objects dictionary,
         providing access to all stored objects.
         """
         return FileStorage.__objects
 
     def save(self):
         """
-        Serializes the __objects dictionary into JSON format and 
+        Serializes the __objects dictionary into JSON format and
         saves it to the file specified by __file_path.
         """
         all_objects = FileStorage.__objects

@@ -51,7 +51,7 @@ class BaseModel:
         models.storage.save()
 
     """
-    A to_dict method that converts the object into a dictionary. 
+    A to_dict method that converts the object into a dictionary.
     it includes class information, creation and
     update timestamps formatted as strings.
     """

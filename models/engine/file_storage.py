@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module for serializing and deserializing data
+Module for handling data serialization and deserialization
 """
 import json
 import os
@@ -15,7 +15,8 @@ from models.city import City
 
 class FileStorage:
     """
-    FileStorage class for storing, serializing and deserializing data
+    FileStorage class manages the storage, 
+    serialization, and deserialization of data
     """
     __file_path = "file.json"
 
@@ -23,42 +24,40 @@ class FileStorage:
 
     def new(self, obj):
         """
-         Sets an object in the __objects dictionary with a key of 
-         <obj class name>.id.
+        Adds an object to the __objects dictionary with a key formatted as 
+        <object class name>.id.
         """
-        obj_cls_name = obj.__class__.__name__
+        obj_class_name = obj.__class__.__name__
 
-        key = "{}.{}".format(obj_cls_name, obj.id)
+        key = "{}.{}".format(obj_class_name, obj.id)
 
         FileStorage.__objects[key] = obj
 
-
     def all(self):
         """
-        Returns the __objects dictionary. 
-        It provides access to all the stored objects.
+        Returns the __objects dictionary, 
+        providing access to all stored objects.
         """
-        return  FileStorage.__objects
-
+        return FileStorage.__objects
 
     def save(self):
         """
-        Serializes the __objects dictionary into 
-        JSON format and saves it to the file specified by __file_path.
+        Serializes the __objects dictionary into JSON format and 
+        saves it to the file specified by __file_path.
         """
-        all_objs = FileStorage.__objects
+        all_objects = FileStorage.__objects
 
         obj_dict = {}
 
-        for obj in all_objs.keys():
-            obj_dict[obj] = all_objs[obj].to_dict()
+        for obj_key in all_objects.keys():
+            obj_dict[obj_key] = all_objects[obj_key].to_dict()
 
         with open(FileStorage.__file_path, "w", encoding="utf-8") as file:
             json.dump(obj_dict, file)
 
     def reload(self):
         """
-        This method deserializes the JSON file
+        Deserializes the JSON file to restore objects.
         """
         if os.path.isfile(FileStorage.__file_path):
             with open(FileStorage.__file_path, "r", encoding="utf-8") as file:

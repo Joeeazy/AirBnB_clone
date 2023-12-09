@@ -160,7 +160,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
         elif len(toks) == 1:
             print("** instance id missing **")
-        elif "{}.{}".format(toks[0], toks[1]) not in objs_dict.keys():
+        elif "{}.{}".format(toks[0], toks[1]) not in my_dict.keys():
             print("** no instance found **")
         elif len(toks) == 2:
             print("** attribute name missing **")

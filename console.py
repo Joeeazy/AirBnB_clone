@@ -183,7 +183,7 @@ class HBNBCommand(cmd.Cmd):
                     print(f"Got: {type(attr_value)}")
 
         """
-        Count the number of instances of a given class.
+        Counts the number of instances of a given class.
         """
     def do_count(self, string):
         tokens = shlex.split(string)

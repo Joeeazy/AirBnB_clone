@@ -14,9 +14,10 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
+
 class HBNBCommand(cmd.Cmd):
     """ The entry point of the cmd interpreter """
-    prompt = '(hbnb) ' # The custom prompt
+    prompt = '(hbnb) '  # The custom prompt
     my_dict = {
         "BaseModel": BaseModel, "User": User, "State": State,
         "City": City, "Amenity": Amenity, "Place": Place,
@@ -32,24 +33,20 @@ class HBNBCommand(cmd.Cmd):
 
         """
         EOF to exit when CTRL + D is invoked
-        
         """
     def do_EOF(self, string):
         print("Exit")
         return True
 
-        """ 
+        """
         shouldn’t execute anything
-        
         """
     def emptyline(self):
         pass
 
-    """ 
+    """
     Creates a new instance of the basemodel class,
-
     saves it (to the JSON file) and prints the id
-
     """
     def do_create(self, string):
         # if class name is missing
@@ -91,10 +88,8 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** no instance found **")
 
-
         """
         Deletes an instance based on the class name
-
         and id (save the change into the JSON file)
         """
     def do_destroy(self, string):
@@ -173,7 +168,7 @@ class HBNBCommand(cmd.Cmd):
 
             try:
                 if attr_value.isdigit():
-                   attr_value = int(attr_value)
+                    attr_value = int(attr_value)
                 elif float(attr_value):
                     attr_value = float(attr_value)
             except ValueError:
@@ -187,25 +182,20 @@ class HBNBCommand(cmd.Cmd):
                     print(f"** value type error: {attr_name} **")
                     print(f"Got: {type(attr_value)}")
 
-
         """
         Count the number of instances of a given class.
         """
     def do_count(self, string):
         tokens = shlex.split(string)
-
         if len(tokens) == 0:
             print("** class name missing **")
             return
-
         counter = 0
         for obj in storage.all().values():
             if obj.__class__.__name__ == tokens[0]:
                 counter += 1
         print(counter)
 
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
-
-
-

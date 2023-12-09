@@ -20,9 +20,9 @@ General
 
 * What is an UUID
 
-* What is *args and how to use it [args/kwargs] (https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
+* What is *args and how to use it [args/kwargs](https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
 
-* What is **kwargs and how to use it [args/kwargs] (https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
+* What is **kwargs and how to use it [args/kwargs](https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
 
 
 * How to handle named arguments in a function

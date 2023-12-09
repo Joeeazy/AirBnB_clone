@@ -23,10 +23,9 @@ class HBNBCommand(cmd.Cmd):
         "Review": Review
             }
 
-        """
-        quit to exit the program
-
-        """
+    """
+    quit to exit the program
+    """
     def do_quit(self, string):
         print("Exiting HBNB")
         return True

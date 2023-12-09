@@ -10,7 +10,7 @@ General
 
 * How to create a command interpreter in Python using the cmd module = [cmd module] (https://intranet.alxswe.com/rltoken/8ecCwE6veBmm3Nppw4hz5A)
 
-* What is Unit testing and how to implement it in a large project
+* What is Unit testing and how to implement it in a large project = [unittest module] (https://intranet.alxswe.com/rltoken/IlFiMB8UmqBG2CxA0AD3jA)
 
 * How to serialize and deserialize a Class
 
@@ -20,9 +20,10 @@ General
 
 * What is an UUID
 
-* What is *args and how to use it
+* What is *args and how to use it [args/kwargs] (https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
 
-* What is **kwargs and how to use it
+* What is **kwargs and how to use it [args/kwargs] (https://intranet.alxswe.com/rltoken/C_a0EKbtvKdMcwIAuSIZng)
+
 
 * How to handle named arguments in a function
 

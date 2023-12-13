@@ -83,10 +83,22 @@ The console will be a tool to validate this storage engine
 
 To Use the AIrBnB clone, clone the repository to your local machine and run the console.py file:
 
-step 1: git clone https://github.com/Joeeazy/AirBnB_clone.git
+1. Clone the repository:
 
-step 2: cd AirBnB_clone
+    ```bash
+    git clone git clone https://github.com/Joeeazy/AirBnB_clone.git
+    ```
 
-run: ./console.py
+2. Navigate to the project directory:
+
+    ```bash
+    cd AirBnB_clone
+    ```
+
+3. Run the console script:
+
+    ```bash
+    ./console.py
+    ```
 
 [AirBnB clone](https://intranet.alxswe.com/concepts/74)

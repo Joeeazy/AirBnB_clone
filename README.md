@@ -79,5 +79,14 @@ This abstraction will also allow you to change the type of storage easily withou
 
 The console will be a tool to validate this storage engine
 
+# Installation
+
+To Use the AIrBnB clone, clone the repository to your local machine and run the console.py file:
+
+step 1: git clone https://github.com/Joeeazy/AirBnB_clone.git
+
+step 2: cd AirBnB_clone
+
+run: ./console.py
 
 [AirBnB clone](https://intranet.alxswe.com/concepts/74)

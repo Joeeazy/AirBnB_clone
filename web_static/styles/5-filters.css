@@ -21,12 +21,12 @@
   border-right: 1px solid #DDDDDD;
 }
 
-.locations h3, .aeminities h3 `{
+.locations .amenities h3 `{
   font-weight: 600;
   margin: 12px 0 5px 0;
 }
 
-.locations h4, .amenities h4 {
+.locations .amenities h4 {
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;

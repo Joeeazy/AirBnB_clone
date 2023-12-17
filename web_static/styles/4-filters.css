@@ -14,7 +14,7 @@
   width: 20%;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-right: 30px;
   opacity: 1;

@@ -62,7 +62,7 @@ body {
 
 .popover {
   display: none;
-  position: absolute; /* Change to absolute */
+  position: relative; /* Change to absolute */
   left: -40px;
   margin-top: 30px;
   background-color: #fafafa;

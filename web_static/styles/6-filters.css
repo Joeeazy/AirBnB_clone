@@ -15,7 +15,7 @@ body {
   justify-content: flex-end;
 }
 
-.search-button {
+section.filters .search-button {
   font-size: 18px;
   background-color: #ff5a5f;
   color: #ffffff;
@@ -29,7 +29,7 @@ body {
   margin-right: 30px;
 }
 
-.search-button:hover {
+section.filters .search-button:hover {
   opacity: 0.9;
 }
 

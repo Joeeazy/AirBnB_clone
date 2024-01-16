@@ -109,7 +109,7 @@ The first step is to “design” / “sketch” / “prototype” each element:
 
 Create simple HTML static pages
 
-# Style guide
+ Style guide
 
 * Fake contents
 
